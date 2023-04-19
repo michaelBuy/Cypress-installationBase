@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "cypress": "^12.10.0"    
+  },
+  "name": "cypress-revision",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "./cypress/integration/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
